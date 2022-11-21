@@ -1,0 +1,18 @@
+{% extends "WebDjango/padre.html" %}
+
+
+
+{% block contenido %}
+
+<form action="{% url 'proyecto-music-buscar-resultados' %}" method="get">
+
+    <p>
+        Nombre del cantante: <input type="text" name="nombre_musica">
+        <input type="submit" value="Buscar cancion">
+    </p>
+
+    
+</form>
+
+
+{% endblock %}

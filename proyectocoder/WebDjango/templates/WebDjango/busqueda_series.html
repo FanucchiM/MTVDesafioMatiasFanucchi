@@ -1,0 +1,18 @@
+{% extends "WebDjango/padre.html" %}
+
+
+
+{% block contenido %}
+
+<form action="{% url 'proyecto-series-buscar-resultados' %}" method="get">
+
+    <p>
+        Nombre de la serie: <input type="text" name="nombre_serie">
+        <input type="submit" value="Buscar serie">
+    </p>
+
+    
+</form>
+
+
+{% endblock %}

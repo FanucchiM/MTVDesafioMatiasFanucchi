@@ -1,0 +1,15 @@
+{% extends "WebDjango/padre.html" %}
+
+
+
+{% block contenido %}
+
+
+    <ul>
+        {% for qwe in series %}
+            <li>{{qwe.nombre}} - {{qwe.temporadas}} - {{qwe.genero}}</li>
+        {% endfor %}
+    </ul>
+
+
+{% endblock %}

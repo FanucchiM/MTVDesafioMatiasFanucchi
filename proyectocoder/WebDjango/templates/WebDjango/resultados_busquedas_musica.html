@@ -1,0 +1,15 @@
+{% extends "WebDjango/padre.html" %}
+
+
+
+{% block contenido %}
+
+
+    <ul>
+        {% for qwe in musica %}
+            <li>{{qwe.duracion_de_la_cancion_en_minutos}} - {{qwe.cantante}}</li>
+        {% endfor %}
+    </ul>
+
+
+{% endblock %}

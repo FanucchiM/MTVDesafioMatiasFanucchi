@@ -1,12 +1,10 @@
 from django.db import models
 
 
+class Curso(models.Model):
 
-
-class Curso (models.Model):
-
-    nombre=models.CharField(max_length=30)
-    camada=models.IntegerField()
+    nombre = models.CharField(max_length=50)
+    camada = models.IntegerField() 
 
 class Estudiante(models.Model):
     nombre = models.CharField(max_length=100)
@@ -23,3 +21,4 @@ class Entregable(models.Model):
     nombre = models.CharField(max_length=100)
     fecha_de_entrega = models.DateField()
     entregado = models.BooleanField()
+
